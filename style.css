@@ -1,0 +1,110 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --main-color:#D14343;
+    --dark-blue:#002266;
+    --back:#F4F5FA;
+}
+
+
+
+/* start navs */
+.third-nav .buttons button:nth-child(2)
+{
+    background-color: var(--main-color);
+    color: white;
+}
+/* end navs */
+/* start first-sec */
+
+.first-sec h6::before
+{position: absolute;
+    content: "";
+    height: 3px;
+    width: 30px;
+    background-color: white;
+    left: -50px;
+    
+top: 10px;
+}
+.first-sec h6::after
+{position: absolute;
+    content: "";
+    height: 3px;
+    width: 30px;
+    background-color: white;
+    right: -50px;
+top: 10px;
+}
+.first-sec .left
+{
+background-color: var(--dark-blue);
+}
+
+.first-sec .bottom
+{
+top: 80%;
+  
+}
+.first-sec .bottom .row div:not(:last-child)
+{
+    border-right: 1px solid gray;
+}
+.first-sec .row
+{
+      margin-bottom: 15%;
+
+}
+@media (max-width:1000px) {
+    .first-sec .bottom
+{
+    top:60%;
+  position: relative !important;
+    
+}
+.first-sec .bottom .row div:not(:last-child)
+{
+    border-right:none;
+}
+.first-sec .row
+{
+      margin-bottom: 25%;
+
+}
+}
+/* end first-sec */
+/* start sec2 */
+.second-sec
+{
+  
+    background-color: var(--back);
+}
+.second-sec .nav-link.active
+{
+border: 0;
+}
+
+.second-sec h6::before
+{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 30px;
+    background-color: var(--main-color);
+    left: -50px;
+top: 10px;
+}
+.second-sec h6::after
+{position: absolute;
+    content: "";
+    height: 3px;
+    width: 30px;
+    background-color: var(--main-color);
+    left: 150px;
+top: 10px;
+}
